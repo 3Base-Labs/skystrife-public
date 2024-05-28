@@ -58,5 +58,34 @@ export const redstoneHolesky = {
   testnet: true,
 };
 
+export const l3base = {
+  id: 48220505331,
+  name: "Nautilus Testnet",
+  network: "l3base",
+  description: "Nautilus Testnet",
+  nativeCurrency: {
+    decimals: 18,
+    name: "Ether",
+    symbol: "ETH",
+  },
+  rpcUrls: {
+    default: {
+      http: ["https://l3.3base.org/"],
+      webSocket: ["wss://l3.3base.org/"],
+    },
+    public: {
+      http: ["https://l3.3base.org/"],
+      webSocket: ["wss://l3.3base.org/"],
+    },
+  },
+  blockExplorers: {
+    default: {
+      name: "Blockscout",
+      url: "https://base.nautscan.com",
+    },
+  },
+  testnet: true,
+};
+
 // If you are deploying to chains other than anvil or Lattice testnet, add them here
-export const supportedChains: SkyStrifeChain[] = [mudFoundry, latticeTestnet, redstone, redstoneHolesky];
+export const supportedChains: SkyStrifeChain[] = [mudFoundry, latticeTestnet, redstone, redstoneHolesky, l3base];
