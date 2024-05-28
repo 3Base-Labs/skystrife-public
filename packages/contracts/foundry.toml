@@ -19,3 +19,6 @@ eth_rpc_url = "https://894.quarry.linfra.xyz/"
 
 [profile.redstone-holesky]
 eth_rpc_url = "https://rpc.holesky.redstone.xyz/"
+
+[profile.l3base]
+eth_rpc_url = "https://l3.3base.org/"
